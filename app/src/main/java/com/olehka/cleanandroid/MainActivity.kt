@@ -1,4 +1,4 @@
-package com.olehka.universeexplorer
+package com.olehka.cleanandroid
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -10,7 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import com.olehka.universeexplorer.databinding.ActivityMainBinding
+import com.olehka.cleanandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

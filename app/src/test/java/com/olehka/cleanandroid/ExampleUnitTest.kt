@@ -1,4 +1,4 @@
-package com.olehka.universeexplorer
+package com.olehka.cleanandroid
 
 import org.junit.Test
 
