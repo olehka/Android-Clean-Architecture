@@ -7,6 +7,9 @@ data class PictureDetailsEntity(
     private val explanation: String,
     private val url: String
 ) {
+    companion object {
+        val empty = PictureDetailsEntity("", "", "")
+    }
 
     fun toPictureDetails() = PictureDetails(title, explanation, url)
 }
