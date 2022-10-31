@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/picturesFragment">
+
+    <fragment
+        android:id="@+id/picturesFragment"
+        android:name="com.olehka.cleanandroid.feature.planetary.ui.PicturesFragment"
+        android:label="@string/pictures_fragment_label" />
+</navigation>
