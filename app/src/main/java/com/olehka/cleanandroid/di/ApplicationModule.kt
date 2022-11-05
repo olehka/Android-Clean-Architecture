@@ -1,5 +1,6 @@
 package com.olehka.cleanandroid.di
 
+import com.olehka.cleanandroid.BuildConfig
 import com.olehka.cleanandroid.feature.planetary.PlanetaryRepository
 import com.olehka.cleanandroid.feature.planetary.PlanetaryRepositoryApi
 import dagger.Module
@@ -7,6 +8,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -25,9 +27,14 @@ class ApplicationModule {
             .build()
     }
 
-    private fun createClient() : OkHttpClient {
-        return OkHttpClient.Builder()
-            .build()
+    private fun createClient(): OkHttpClient {
+        val okHttpClientBuilder: OkHttpClient.Builder = OkHttpClient.Builder()
+        if (BuildConfig.DEBUG) {
+            val loggingInterceptor =
+                HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BASIC)
+            okHttpClientBuilder.addInterceptor(loggingInterceptor)
+        }
+        return okHttpClientBuilder.build()
     }
 
     @Provides

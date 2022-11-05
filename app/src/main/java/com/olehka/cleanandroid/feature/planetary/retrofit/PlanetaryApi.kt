@@ -9,7 +9,7 @@ internal interface PlanetaryApi {
         const val BASE_URL = "https://api.nasa.gov/"
         const val API_KEY = "DEMO_KEY"
         const val DATE = "2019-03-02"
-        const val APOD_URL = "planetary/apod"
+        const val APOD_URL = "apod"
     }
 
     @GET(APOD_URL)
@@ -19,5 +19,6 @@ internal interface PlanetaryApi {
     fun pictures(
         @Query("start_date") startDate: String,
         @Query("end_date") endDate: String,
+        @Query("api_key") apiKey: String,
     ): Call<List<PictureEntity>>
 }
