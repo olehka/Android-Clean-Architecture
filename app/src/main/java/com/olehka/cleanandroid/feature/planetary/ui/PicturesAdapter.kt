@@ -6,9 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.olehka.cleanandroid.R
 import com.olehka.cleanandroid.core.extension.inflate
 import com.olehka.cleanandroid.databinding.RowPictureBinding
+import javax.inject.Inject
 import kotlin.properties.Delegates
 
-class PicturesAdapter : RecyclerView.Adapter<PicturesAdapter.ViewHolder>() {
+class PicturesAdapter @Inject constructor() : RecyclerView.Adapter<PicturesAdapter.ViewHolder>() {
     internal var collection: List<PictureView> by Delegates.observable(emptyList()) { _, _, _ ->
         notifyDataSetChanged()
     }

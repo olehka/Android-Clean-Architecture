@@ -6,7 +6,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.olehka.cleanandroid.R
 import com.olehka.cleanandroid.databinding.ActivityPicturesBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PicturesActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPicturesBinding
 
