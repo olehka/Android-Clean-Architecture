@@ -19,6 +19,5 @@ internal interface PlanetaryApi {
     fun pictures(
         @Query("start_date") startDate: String,
         @Query("end_date") endDate: String,
-        @Query("api_key") apiKey: String,
     ): Call<List<PictureEntity>>
 }

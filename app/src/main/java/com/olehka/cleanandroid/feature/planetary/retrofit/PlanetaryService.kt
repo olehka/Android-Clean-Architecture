@@ -8,8 +8,8 @@ import javax.inject.Singleton
 class PlanetaryService @Inject constructor(retrofit: Retrofit) : PlanetaryApi {
     private val planetaryApi by lazy { retrofit.create(PlanetaryApi::class.java) }
 
-    override fun pictures(startDate: String, endDate: String, apiKey: String) =
-        planetaryApi.pictures(startDate, endDate, apiKey)
+    override fun pictures(startDate: String, endDate: String) =
+        planetaryApi.pictures(startDate, endDate)
 
     override fun pictureDetails(date: String) = planetaryApi.pictureDetails(date)
 }
