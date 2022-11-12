@@ -13,8 +13,8 @@ import javax.inject.Singleton
 @Singleton
 class PlanetaryRepository @Inject constructor(private val service: PlanetaryService) :
     PlanetaryRepositoryApi {
-    override fun getPictures(): Either<Failure, List<Picture>> {
-        return service.pictures("2015-06-03", "2015-06-04").request(
+    override fun getPictures(startDate: String, endDate: String): Either<Failure, List<Picture>> {
+        return service.pictures(startDate, endDate).request(
             { it.map { pictureEntity -> pictureEntity.toPicture() } },
             emptyList()
         )

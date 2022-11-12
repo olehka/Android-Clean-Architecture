@@ -7,7 +7,10 @@ import javax.inject.Inject
 
 class GetPicturesUseCase @Inject constructor(
     private val planetaryRepositoryApi: PlanetaryRepositoryApi
-) : UseCase<List<Picture>, UseCase.None>() {
+) : UseCase<List<Picture>, GetPicturesUseCase.Params>() {
 
-    override suspend fun run(params: None) = planetaryRepositoryApi.getPictures()
+    override suspend fun run(params: Params) =
+        planetaryRepositoryApi.getPictures(params.startDate, params.endDate)
+
+    data class Params(val startDate: String, val endDate: String)
 }

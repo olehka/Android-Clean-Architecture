@@ -9,5 +9,5 @@ interface PlanetaryRepositoryApi {
 
     fun getPictureDetails(): Either<Failure, PictureDetails>
 
-    fun getPictures(): Either<Failure, List<Picture>>
+    fun getPictures(startDate: String, endDate: String): Either<Failure, List<Picture>>
 }
