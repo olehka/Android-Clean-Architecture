@@ -1,5 +1,6 @@
 package com.olehka.cleanandroid.feature.planetary.ui
 
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,7 @@ class PicturesAdapter @Inject constructor() : RecyclerView.Adapter<PicturesAdapt
         fun bind(pictureView: PictureView) {
             val binding = RowPictureBinding.bind(itemView)
             binding.title.text = pictureView.title
+            Log.d("PicturesAdapter", "bind: ${pictureView.url}")
         }
     }
 

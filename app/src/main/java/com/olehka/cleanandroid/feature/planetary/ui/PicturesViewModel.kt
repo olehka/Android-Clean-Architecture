@@ -27,6 +27,6 @@ class PicturesViewModel @Inject constructor(
     }
 
     private fun handlePictures(pictures: List<Picture>) {
-        _pictures.value = pictures.map { PictureView(it.title) }
+        _pictures.value = pictures.map { PictureView(it.title, it.url) }
     }
 }
