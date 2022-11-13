@@ -4,6 +4,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.olehka.cleanandroid.R
 import com.olehka.cleanandroid.core.extension.inflate
 import com.olehka.cleanandroid.databinding.RowPictureBinding
@@ -17,9 +18,10 @@ class PicturesAdapter @Inject constructor() : RecyclerView.Adapter<PicturesAdapt
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(pictureView: PictureView) {
+            Log.d("PicturesAdapter", "load: ${pictureView.url}")
             val binding = RowPictureBinding.bind(itemView)
             binding.title.text = pictureView.title
-            Log.d("PicturesAdapter", "bind: ${pictureView.url}")
+            binding.image.load(pictureView.url)
         }
     }
 
