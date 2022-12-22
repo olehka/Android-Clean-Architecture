@@ -1,7 +1,9 @@
 # Android Mobile - Clean Architecture (Work In Progress)
 
-Based on Clean Architecture and NASA API, sample Android project demonstrates the list of pictures:
-[Astronomy Picture of the Day ](https://apod.nasa.gov/apod/astropix.html).
+Sample Android project demonstrates the list of pictures:
+[Astronomy Picture of the Day ](https://apod.nasa.gov/apod/astropix.html)
+
+<img src="images/Screenshot_20221222_181038.png" width=25% height=25%> <img src="images/Screenshot_20221222_181135.png" width=25% height=25%> <img src="images/Screenshot_20221222_181150.png" width=25% height=25%>
 
 Generate [NASA developer key](https://api.nasa.gov/) necessary to get access to the data and run the application. 
 - Add "API_KEY" to build properties.
