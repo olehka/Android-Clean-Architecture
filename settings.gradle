@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Clean Android @olehka"
+rootProject.name = "Android-Clean-Architecture-olehka"
 include ':app'

@@ -1,4 +1,4 @@
-# Clean Android Mobile Architecture (Work In Progress)
+# Android Mobile - Clean Architecture (Work In Progress)
 
 Based on Clean Architecture and NASA API, sample Android project demonstrates the list of pictures:
 [Astronomy Picture of the Day ](https://apod.nasa.gov/apod/astropix.html).
