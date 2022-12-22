@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarStyleBase">
+        <item name="android:theme">@style/ToolbarStyleBase</item>
+        <item name="titleTextAppearance">@style/TitleTextAppearanceCustom</item>
+    </style>
+
+    <style name="ToolbarThemeBase">
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:textColorSecondary">@color/secondary</item>
+    </style>
+
+    <style name="TitleTextAppearanceCustom" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>
