@@ -8,6 +8,12 @@ Sample Android project demonstrates the list of pictures:
 Generate [NASA developer key](https://api.nasa.gov/) necessary to get access to the data and run the application. 
 - Add "API_KEY" to build properties.
 
+## Application architecture
+The project is structured in three layer pattern fitting the [official Google recommendation](https://developer.android.com/topic/architecture).
+The dependency flow is always one direction from the outer towards the inner circles according to the Uncle Bob's [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+
+<img src="images/Android-Diagram-01.png"> <img src="images/Android-Diagram-02.png">
+
 ## List of Google Android libs
 - [Androidx:core-ktx](https://developer.android.com/kotlin/ktx): Kotlin extensions that are part of the Android framework.
 - [Androidx:appcompat](https://developer.android.com/jetpack/androidx/releases/appcompat): Access to new APIs from older platform versions.
