@@ -1,7 +1,7 @@
-package com.olehka.cleanandroid.core.interactor
+package com.olehka.cleanandroid.core.domain
 
-import com.olehka.cleanandroid.core.function.Either
-import com.olehka.cleanandroid.core.model.Failure
+import com.olehka.cleanandroid.shared.core.functional.Either
+import com.olehka.cleanandroid.shared.core.model.Failure
 import kotlinx.coroutines.*
 
 abstract class UseCase<out Type, in Params> where Type : Any {

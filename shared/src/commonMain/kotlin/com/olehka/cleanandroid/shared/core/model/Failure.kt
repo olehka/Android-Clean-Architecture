@@ -1,4 +1,4 @@
-package com.olehka.cleanandroid.core.model
+package com.olehka.cleanandroid.shared.core.model
 
 sealed class Failure {
     object NetworkConnection : Failure()

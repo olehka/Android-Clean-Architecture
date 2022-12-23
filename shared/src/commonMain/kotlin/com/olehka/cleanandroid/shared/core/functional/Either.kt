@@ -1,4 +1,4 @@
-package com.olehka.cleanandroid.core.function
+package com.olehka.cleanandroid.shared.core.functional
 
 /**
  * Represents a value of one of two possible types (a disjoint union).

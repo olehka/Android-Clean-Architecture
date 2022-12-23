@@ -1,6 +1,7 @@
-package com.olehka.cleanandroid.core.function
+package com.olehka.cleanandroid.core.functional
 
 import com.olehka.cleanandroid.UnitTest
+import com.olehka.cleanandroid.shared.core.functional.*
 import org.amshove.kluent.shouldBe
 import org.amshove.kluent.shouldBeEqualTo
 import org.amshove.kluent.shouldBeInstanceOf
