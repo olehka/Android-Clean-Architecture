@@ -9,8 +9,8 @@ Generate [NASA developer key](https://api.nasa.gov/) necessary to get access to 
 - Add "API_KEY" to build properties.
 
 ## Application architecture
-The project is structured in three layer pattern fitting the [official Google recommendation](https://developer.android.com/topic/architecture).
-The dependency flow is always one direction from the outer towards the inner circles according to the Uncle Bob's [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+The project is structured in a three-layer pattern fitting the [official Google recommendation](https://developer.android.com/topic/architecture).
+The dependency flow is always one direction from the outer towards the inner circles according to Uncle Bob's [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
 
 <img src="images/Android-Diagram-01.png"> <img src="images/Android-Diagram-02.png">
 
