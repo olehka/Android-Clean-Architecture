@@ -1,6 +1,6 @@
 package com.olehka.cleanandroid.feature.planetary.retrofit
 
-import com.olehka.cleanandroid.feature.planetary.model.PictureDetails
+import com.olehka.cleanandroid.shared.feature.planetary.model.PictureDetails
 
 data class PictureDetailsEntity(
     private val title: String,

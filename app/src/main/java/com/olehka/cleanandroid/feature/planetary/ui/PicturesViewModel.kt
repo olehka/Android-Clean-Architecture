@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.olehka.cleanandroid.core.android.BaseViewModel
 import com.olehka.cleanandroid.core.util.getDateFormatted
 import com.olehka.cleanandroid.feature.planetary.domain.GetPicturesUseCase
-import com.olehka.cleanandroid.feature.planetary.model.Picture
+import com.olehka.cleanandroid.shared.feature.planetary.model.Picture
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
