@@ -1,8 +1,8 @@
 package com.olehka.cleanandroid.feature.planetary.domain
 
-import com.olehka.cleanandroid.core.interactor.UseCase
+import com.olehka.cleanandroid.core.domain.UseCase
 import com.olehka.cleanandroid.feature.planetary.PlanetaryRepositoryApi
-import com.olehka.cleanandroid.feature.planetary.model.PictureDetails
+import com.olehka.cleanandroid.shared.feature.planetary.model.PictureDetails
 import javax.inject.Inject
 
 class GetPictureDetailsUseCase @Inject constructor(

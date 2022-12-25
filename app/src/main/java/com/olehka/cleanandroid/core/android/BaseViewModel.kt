@@ -3,7 +3,7 @@ package com.olehka.cleanandroid.core.android
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.olehka.cleanandroid.core.model.Failure
+import com.olehka.cleanandroid.shared.core.model.Failure
 
 abstract class BaseViewModel : ViewModel() {
     private val _failure: MutableLiveData<Failure> = MutableLiveData()

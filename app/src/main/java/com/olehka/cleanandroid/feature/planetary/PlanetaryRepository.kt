@@ -1,10 +1,10 @@
 package com.olehka.cleanandroid.feature.planetary
 
-import com.olehka.cleanandroid.core.function.Either
-import com.olehka.cleanandroid.core.model.Failure
+import com.olehka.cleanandroid.shared.core.functional.Either
+import com.olehka.cleanandroid.shared.core.model.Failure
 import com.olehka.cleanandroid.core.network.request
-import com.olehka.cleanandroid.feature.planetary.model.Picture
-import com.olehka.cleanandroid.feature.planetary.model.PictureDetails
+import com.olehka.cleanandroid.shared.feature.planetary.model.Picture
+import com.olehka.cleanandroid.shared.feature.planetary.model.PictureDetails
 import com.olehka.cleanandroid.feature.planetary.retrofit.PictureDetailsEntity
 import com.olehka.cleanandroid.feature.planetary.retrofit.PlanetaryService
 import javax.inject.Inject

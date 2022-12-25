@@ -1,9 +1,9 @@
 package com.olehka.cleanandroid.feature.planetary
 
-import com.olehka.cleanandroid.core.function.Either
-import com.olehka.cleanandroid.core.model.Failure
-import com.olehka.cleanandroid.feature.planetary.model.Picture
-import com.olehka.cleanandroid.feature.planetary.model.PictureDetails
+import com.olehka.cleanandroid.shared.core.functional.Either
+import com.olehka.cleanandroid.shared.core.model.Failure
+import com.olehka.cleanandroid.shared.feature.planetary.model.Picture
+import com.olehka.cleanandroid.shared.feature.planetary.model.PictureDetails
 
 interface PlanetaryRepositoryApi {
 
